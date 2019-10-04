@@ -1,5 +1,11 @@
 .App {
-  text-align: center;
+  margin: 0;
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+  letter-spacing: 2px;
+  line-height: 1.35;
+  font-family: 'Dosis', sans-serif;
 }
 
 .App-logo {
