@@ -1,0 +1,19 @@
+.about-container {
+  .about-content {
+    .title {
+
+    }
+    .photo-container {
+      width: 200px;
+      height: 200px;
+      position: relative;
+      overflow: hidden;
+      border-radius: 50%;
+      .photo {
+        width: 200px;
+        height: 200px;
+        object-fit: cover;
+      }
+    }
+  }
+}

@@ -1,45 +1,57 @@
 
 .Home {
-  h1 h2 p {
-    color: white;
-  }
-
-  .overlay {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    opacity: 0.8;
-    display: block;
-    z-index: 1;
-    transition: opacity 0.2s ease-in;
-    background: rgba(0,127,225,0.77);
-    transition: all 0.5 ease-in;
-  }
-  .home-container {
-    background: url("/assets/background.jpg");
-    background-repeat: no-repeat;
-    background-size: cover;
-    height: 100vh;
-  }
-
+  background:linear-gradient(0deg,rgba(211, 7, 194, 0.527),rgba(11, 182, 224, 0.555)), url("/assets/background.jpg") rgba(1, 217, 255, 0.651);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-blend-mode: multiply;
+  height: 100vh;
   .content {
     position: absolute;
     top: 50%;
     transform: translateY(-50%);
     width: 100%;
-  }
-      .typed-cursor {
-        opacity: 0;
+    .title {
+      h1 {
+        font-size: 70px;
+        text-align: center;
+        text-transform: uppercase;
+        min-height: 180px;
+        color: white;
+        font-weight: bold;
       }
-      .title {
-        h1 {
-          font-size: 70px;
-          text-align: center;
-          text-transform: uppercase;
-          min-height: 180px;
-          color: white;
-        }
-      }   
+    }   
+  }
+
+  .menu {
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    text-align: center;
+    .links {
+      text-decoration: none;
+      color: white;
+      font-size: 24px;
+      padding: 20px;
+      font-family: 'Dosis';
+      &:hover {
+        color: rgb(180, 180, 180);
+      }
+      &:active {
+        color: rgb(180, 180, 180);
+      }
+    }    
+  }
+
+  footer {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    left: 0;
+    background: rgba(0,0,0,0.1);
+    p {
+      text-align: center;
+      color: white;
+    }
+  }
 }

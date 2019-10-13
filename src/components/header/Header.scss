@@ -1,0 +1,87 @@
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: fixed;
+  top: 0px;
+  left: 0px;
+  right: 0px;
+  padding: 5px 15px;
+  border-bottom: 1px solid #ccc;
+  min-height: 45px;
+  background:linear-gradient(0deg,rgba(211, 7, 194, 0.527),rgba(11, 182, 224, 0.555)), url("/assets/background.jpg") rgba(1, 217, 255, 0.651);
+  background-blend-mode: multiply;
+  background-repeat: no-repeat;
+  background-size: 100%;
+  background-position: 60% center;
+
+  .navbar-pages {
+    width: 100%;
+    margin-left: 10px;
+    .navbar-item {
+      height: 100%;
+      margin: 18px;
+      text-decoration: none;
+      font-family: 'Roboto', sans-serif;
+      color: white;
+      &:hover {
+        color: rgb(180, 180, 180);
+      }
+    }
+    .navbar-item-active {
+      height: 100%;
+      margin: 18px;
+      text-decoration: none;
+      color: white;
+      padding-bottom: 17px;
+      border-bottom: solid rgb(255, 255, 255) 4px;
+      &:hover {
+        color: rgb(180, 180, 180);
+      }
+    }
+  }
+  
+  .navbar-left {
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    flex: 1 1 auto;
+    height: 45px;
+  }
+  .navbar-right {
+    display: flex;
+    align-items: center;
+    flex: 1 1 auto;
+    flex-direction: row-reverse;
+    height: 45px;
+    .navbar-menu {
+      cursor: pointer;
+      margin-right: 15px;
+      .linkedin {
+        margin-right: 15px;
+        color: white;
+        &:hover {
+          opacity: 0.75;
+        }
+      }
+      .github {
+        &:hover {
+          opacity: 0.75;
+        }
+      }
+    }
+  }
+}
+
+.navbar-brand {
+  display: inline-block;
+  margin-right: 16px;
+  font-size: 1.5rem;
+  .logo {
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    &:hover {
+      color: rgb(180, 180, 180);
+    }
+  }
+}
