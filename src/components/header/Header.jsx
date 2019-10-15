@@ -1,5 +1,6 @@
 import React, { Component } from 'react'
-import LinkedInIcon from '@material-ui/icons/LinkedIn';
+import LinkedInIcon from '@material-ui/icons/LinkedIn'
+import GitHubIcon from '@material-ui/icons/GitHub'
 import { Link } from 'react-router-dom'
 import PropTypes from 'prop-types'
 import './Header.scss'
@@ -63,7 +64,7 @@ class Header extends Component {
         <div className="navbar-right">
           <div className="navbar-menu">
             <LinkedInIcon onClick={this.linkedInRedirect} className="linkedin"/>
-            <img onClick={this.githubRedirect} className="github" style={{ width: 22 }} src="/assets/github-logo.svg" alt="github logo" />
+            <GitHubIcon onClick={this.githubRedirect} className="github"/>
           </div>
         </div>
       </div>
