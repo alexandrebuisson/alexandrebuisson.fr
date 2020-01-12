@@ -1,0 +1,22 @@
+.works-container {
+  .works-content {
+    margin: 30px;
+    .title {
+      margin-bottom: 15px;
+      text-align: center;
+    }
+    .cardsParent {
+      display: flex;
+      justify-content: center;
+      .cardsContainer {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        @media screen and (max-width: 840px) {
+          display: flex;
+          flex-direction: column;
+        }
+      }
+    }
+  }
+}

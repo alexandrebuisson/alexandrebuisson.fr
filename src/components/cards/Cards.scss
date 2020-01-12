@@ -1,0 +1,41 @@
+.cards {
+  display: flex;
+  flex-direction: column;
+  width: 400px;
+  border: 1px solid rgb(212, 217, 221);
+  border-radius: 22px;
+  overflow: hidden;
+  margin: 30px;
+  @media screen and (max-width: 840px) {
+    width: 300px;
+  }
+  .imageContainer {
+    width: 100%;
+    .image {
+      width: 100%;
+    }
+    &:hover {
+      // TO DO
+    }
+  }
+  .contentContainer {
+    padding: 0 16px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    justify-content: center;
+    .title {
+      padding: 14px;
+      font-size: 1.4rem;
+      font-weight: 700;
+    }
+    .button {
+      width: 100%;
+      display: flex;
+      justify-content: center;
+      &:hover {
+        text-decoration: none;
+      }
+    }
+  }
+}

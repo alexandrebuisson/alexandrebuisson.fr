@@ -4,6 +4,7 @@ import './Home.scss'
 
 class Home extends React.PureComponent {
   render() {
+    const currentYear = new Date().getFullYear()
     return (
       <div className="Home">
         <div className="overlay" />
@@ -24,7 +25,7 @@ class Home extends React.PureComponent {
             </div>
           </div>
           <footer>
-            <p> Alexandre Buisson &copy; 2019</p>
+            <p>Alexandre Buisson &copy; {currentYear}</p>
           </footer>
         </div>
     )

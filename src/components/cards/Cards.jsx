@@ -1,17 +1,17 @@
 import React from 'react'
-import { Link } from 'react-router-dom'
 import './Cards.scss'
 
 const Cards = props => {
+  const { title, image, description, url } = props
   return (
-    <div className="card text-center">
-      <div className="overflow">
-        <img style={{ width: 120 }} src={props.image} alt={props.alt} />
+    <div className="cards">
+      <div className="imageContainer">
+        <img className="image" src={image} alt={title} />
       </div>
-      <div className="card-body text-dark">
-        <h4 className="card-title">{props.title}</h4>
-        <p className="card-text text-secondary">{props.description}</p>
-        <Link className="btn btn-outline-success" to={props.url}>Plus d'informations</Link>
+      <div className="contentContainer">
+        <h3 className="title">{title}</h3>
+        <p className="description">{description}</p>
+        <a className="button" href={url} target="_blank" rel="noopener noreferrer">Voir la démo</a>
       </div>
     </div>
   )
