@@ -1,0 +1,56 @@
+.contact-container {
+  .justify-content {
+    display: flex;
+    justify-content: center;
+  }
+  .contact-parent {
+    display: flex;
+    flex-direction: column;
+    width: 700px;
+    @media only screen and (max-width: 840px) {
+      width: 100%;
+      margin: 20px;
+    }
+    .mailContainer {
+      width: 100%;
+      display: flex;
+      justify-content: center;
+      margin-bottom: 2em;
+      h1 {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        width: fit-content;
+        font-size: 32px;
+        @media only screen and (max-width: 840px) {
+          font-size: 17px;
+        }
+        a {
+          color: rgb(79, 158, 211);
+          border-bottom: 1px dashed;
+          &:hover {
+            color: #2baaff;
+            text-decoration: none;
+          }
+        }
+      }
+    }
+    p {
+      margin-bottom: 12px;
+      text-align: justify;
+    }
+  }
+}
+
+footer {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  left: 0;
+  background: whitesmoke;
+  p {
+    text-align: center;
+    margin: 0;
+    padding: 10px;
+  }
+}

@@ -28,6 +28,7 @@ class MyWorks extends React.PureComponent {
       {id: 0, label: '#React'},
       {id: 1, label: '#Nginx'},
     ]
+    const currentYear = new Date().getFullYear()
     return ( 
       <div className="works-container">
         <Header works />
@@ -41,6 +42,9 @@ class MyWorks extends React.PureComponent {
             </div>
           </div>
         </div>
+        <footer>
+          <p>Alexandre Buisson &copy; {currentYear}</p>
+        </footer>
       </div>
     )
   }
